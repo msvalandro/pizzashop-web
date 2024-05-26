@@ -20,6 +20,10 @@ Follow these steps to get the app up and running on your local machine.
 
 ### Installation
 
+*before running this front-end, you will have to clone the back-end from https://github.com/msvalandro/pizzashop-api and follow the instructions on README.md file*
+
+create a `.env.local` file copying the environment variables from `.env.example` file to run it locally
+
 ```sh
 # Clone the repository
 git clone https://github.com/msvalandro/pizzashop-web.git
@@ -29,7 +33,16 @@ cd pizzashop-web
 pnpm i
 
 # Run the app
-pnpm run dev
+pnpm dev
+
+# Run the app w/ mocked requests (no back-end needed)
+pnpm dev:test
+
+# Run tests
+pnpm test
+
+# Run e2e tests w/ playwright
+pnpm test:e2e
 ```
 
 ## 📄 License
